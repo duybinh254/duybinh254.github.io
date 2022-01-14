@@ -1,0 +1,91 @@
+*{
+    margin: auto;
+    padding: 0;
+    box-sizing: borderbox;
+    font-family: Roboto, sans-serif;
+}
+.card{
+    width: 417px;
+    height: 390.6px;
+    box-shadow:  0 4px 4px rgb(0 0 0 / 15%);
+    font-family: Roboto,sans-serif;
+}
+.year {
+    color: white;
+    background-color: #ef5321;
+    text-align: center;
+    font-size: 16px;
+    padding: 3px 0 3px 0;
+}
+.time{
+    background-color: #fe6d3f;
+    text-align: center;
+    color: white; 
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.time .day{
+    color: white;
+    font-size: 40px;
+    font-weight: 300;
+}
+ h1{
+    font-size: 40px;
+    font-weight: 300;
+    padding-top: 20px;
+}
+h2{
+    font-size: 16px;
+    font-weight: 300;
+    padding-bottom: 20px;
+}
+.info a{
+    text-decoration: none;
+    color: #464646;
+    font-size: 20.8px;
+    font-weight: 400;
+    padding: 10px 24px 10px 24px;
+    display: block;
+}
+.teacher{
+    padding-left: 24px;
+    font-size: 16px;
+    color: #464646;
+}
+.day{
+    color: #757575;
+    padding-left: 24px;  
+    padding-top: 10px;
+ }   
+ .day p{
+     display: inline-block;
+ }
+ .timelearn{
+    color: #757575;
+    padding-left: 24px;
+    padding-top: 10px;
+ }
+ .timelearn p{
+     display: inline-block;
+ }
+
+ 
+ .location{
+    color: #757575;
+    padding-left: 24px;
+    padding-top: 10px;
+    border-bottom: 1px solid;
+ }
+ .location p{
+  display: inline-block;
+ }
+
+input {
+    padding-left: 24px;
+  border: none;
+  background-color: white;
+  color: #3c78e8;
+  padding-top: 30px;
+  font-size: 16px;
+  font-weight: 300;
+}
