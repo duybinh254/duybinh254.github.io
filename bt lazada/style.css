@@ -1,0 +1,124 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  padding-top: 20px;
+}
+.lazada {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+.sale {
+  background-color: aqua;
+}
+.sale img {
+  width: 1350px;
+  height: 324px;
+}
+.header {
+  font-family: "Roboto", sans-serif;
+  background-color: aqua;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: #757575;
+
+  padding-left: 140px;
+}
+.logo {
+  padding-left: 140px;
+  font-size: 43px;
+  display: flex;
+}
+.box {
+  padding-left: 20px;
+  position: relative;
+}
+input {
+  box-sizing: border-box;
+  width: 650px;
+  height: 30px;
+}
+.icon-search {
+  position: absolute;
+  top: 19px;
+  background-color: #f57224;
+  color: #fff;
+  width: 28px;
+  height: 30px;
+  font-size: 20px;
+  text-align: center;
+  padding-top: 5px;
+}
+.logo input {
+  margin-bottom: 30px;
+}
+
+.logo img {
+  width: 200px;
+}
+
+a {
+  text-decoration: none;
+  color: #757575;
+}
+ul {
+  list-style-type: none;
+}
+
+.menu-item {
+  width: 200px; 
+  position: relative;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 15%);
+}
+.menu-item p {
+  padding-left: 8px;
+  padding-right: 8px;
+  height: 27px;
+  line-height: 27px;
+  text-decoration: none;
+  font-size: 13px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu-item p .icon {
+  display: none;
+}
+.menu-item:hover > p,
+.menu-item:hover > p a {
+  background-color: #edf3de;
+  color: rgb(243, 109, 0);
+}
+
+.menu-item:hover > p .icon {
+  display: inline-block;
+
+  color: rgb(243, 109, 0);
+}
+.sub-menu {
+  width: 200px;
+  position: absolute;
+  left: 200px;
+  top: 0px;
+  display: none;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 15%);
+}
+.sub {
+  width: 200px;
+  position: absolute;
+  top: 0px;
+  left: 200px;
+  display: none;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 15%);
+}
+.menu-item:hover .sub-menu {
+  display: block;
+}
+.sub-menu:hover .sub {
+  display: block;
+}
