@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #111111;
+  background-color: #f2f2f2;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  margin: auto;
+}
+
+.icon {
+  font-size: 47px;
+  margin: 0 auto;
+  color: #999999;
+  background-color: #f2f2f2;
+}
+.sub {
+  padding: 30px;
+}
+
+.sub h3 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28.8px;
+  color: #111111;
+}
+.sub h6 {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 21.6px;
+}
+.form-control {
+  border-radius: 0;
+}
+
+::placeholder {
+  font-size: 16px;
+  color: #726e6e !important ;
+  font-weight: 400 !important;
+  font-family: "Open Sans", sans-serif !important;
+}
+.submit {
+  border-width: 2px;
+  border-color: #454545;
+  color: #454545;
+  padding: 10px 30px 10px 30px;
+  font-family: "Open Sans", sans-serif;
+}
+.google-maps {
+  padding-top: 45px;
+}
+/* .google-maps {
+  position: relative;
+  padding-bottom: 75%; 
+  height: 0;
+  overflow: hidden;
+}
+.google-maps iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+} */
+
