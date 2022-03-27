@@ -18,9 +18,12 @@ img {
 .card-image img {
     height: 310px;
     overflow: hidden;
+    margin: 0 auto 0 0;
+    width: 100%;
 }
 .card-item {
-    box-shadow: 5px 5px 12px 0 #948e8e;
+    box-shadow: 5px 5px 12px 0 rgb(0 0 0 / 15%);
+    padding: 30px;
 }
 .icon img {
     width: 70px;
