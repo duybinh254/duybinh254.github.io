@@ -1,0 +1,229 @@
+@media (max-width: 992px) {
+  .row {
+    margin: auto;
+  }
+  /* header */
+  .header-icon {
+    justify-content: flex-start;
+  }
+  /* menu */
+  .menu-icon {
+    display: inline-block;
+    font-size: 1.5rem;
+    cursor: pointer;
+    position: absolute;
+    right: 76px;
+    top: 254px;
+    font-size: 40px;
+  }
+  .menu-item ul {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #f7af6c;
+    flex-direction: column;
+    transition: all 0.3s;
+    z-index: 1001;
+  }
+  .menu-item ul li {
+    padding: 10px 0;
+    color: #525252;
+  }
+  .drink {
+    background-color: #f7af6c;
+    color: #ffffff;
+}
+.travel {
+    left: 32px;
+}
+/* post */
+.card-item {
+    width: 294px;
+    margin-left: 16px;
+}
+.para-us {
+    margin-bottom: 0px;
+}
+#footer-page input {
+    margin-top: 12px;
+}
+#footer-page h4 {
+    margin-top: 40px;
+}
+.man-like img {
+    margin: 0;
+}
+#footer-page {
+    height: 100%;
+}
+.foot {
+    height: 100%;
+
+  }
+  .copyright {
+    margin-bottom: 0;
+    padding-bottom: 40px;
+}
+#footer-page button {
+    top: 11px;
+}
+}
+
+@media (max-width: 576px) {
+    /* .phone {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    } */
+  .row {
+    margin: auto;
+  }
+  /* header */
+  #header {
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+  .header-icon {
+    justify-content: center;
+  }
+  /* menu */
+  .menu-item ul {
+     width: 150px;
+  }
+  .menu-item ul li {
+      font-size: 11px;
+  }
+  #overlay {
+      height: 900vh;
+  }
+  .menu-icon {
+    display: inline-block;
+    font-size: 1.5rem;
+    cursor: pointer;
+    position: absolute;
+    right: 25px;
+    top: 263px;
+    font-size: 30px;
+  }
+  .header-icon-item {
+      width: 25px;
+      height: 25px;
+  }
+  .drink {
+      background-color: #f7af6c;
+      color: #ffffff;
+  }
+  .line {
+      width: 90%;
+  }
+  /* banner */
+  #banner {
+      padding-top: 22px;
+  }
+  .banner-para {
+      height: 50px;
+  }
+  .banner-para p {
+      font-size: 12px;
+      line-height: 20px;
+  }
+  .banner-para h6 {
+      font-size: 9px;
+      line-height: 10px;
+  }
+  .banner-travel {
+      margin-top: 27px;
+      margin-bottom: 5px;
+      width: 62px;
+      height: 17px;
+  }
+  .angel-right {
+      left: 88.82%;
+      width: 15px;
+      height: 25px;
+  }
+  .angel-left {
+      width: 15px;
+      height: 25px;
+  }
+  /* row three */
+  #row-three {
+      padding-top: 25px;
+  }
+  .travel {
+      left: 40px;
+  }
+  .travel p {
+      font-size: 14px;
+  }
+  /* posts */
+  .phone {
+      display: grid;
+      grid-template-columns: repeat(1,1fr);
+
+  }
+  .latest {
+      margin-top: 40px;
+      margin-bottom: 35px;
+  }
+  .card-item {
+      width: 294px;
+      margin-left: 23px;
+  }
+  .card-content-para p {
+      font-size: 21px;
+  }
+  .pagination {
+      font-size: 9px;
+      padding-left: 15px;
+  }
+  .page-item {
+      margin-right: 10px;
+  }
+  /* instagram */
+  #instagram {
+      padding-top: 30px;
+      padding-bottom: 30px;
+  }
+  /* footer */
+  .para-us {
+      margin-bottom: 0px;
+  }
+  #footer-page input {
+      margin-top: 12px;
+  }
+  #footer-page h4 {
+      margin-top: 40px;
+  }
+  .man-like img {
+      margin: 0;
+  }
+  /* responsive */
+  #footer-page {
+      height: 100%;
+  }
+  .foot {
+      height: 100%;
+ 
+    }
+    .copyright {
+        margin-bottom: 0;
+        padding-bottom: 40px;
+    }
+    .copyright {
+        font-size: 10px;
+    }
+    .footer-line-child {
+        width: 310px;
+    }
+    #footer-page button {
+        top: 11px;
+    }
+}
+/* @media(max-width:768px) {
+    
+} */
