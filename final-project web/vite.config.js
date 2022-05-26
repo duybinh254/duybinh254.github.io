@@ -1,0 +1,19 @@
+const { resolve } = require("path");
+const { defineConfig } = require("vite");
+
+module.exports = defineConfig({
+    build: {
+        rollupOptions: {
+            input: {
+                index: resolve(__dirname, "index.html"),
+                about: resolve(__dirname, "about.html"),
+                detail: resolve(__dirname, "detail.html"),
+                cart: resolve(__dirname, "cart.html"),
+                news: resolve(__dirname, "news.html"),
+                detailnews: resolve(__dirname, "detailnews.html"),
+                pay: resolve(__dirname, "pay.html"),
+                category: resolve(__dirname, "category.html"),
+            },
+        },
+    },
+});

@@ -1,6 +1,0 @@
-import "../css/index.css"
-import "../css/header.css"
-import "../css/footer.css"
-import "../css/category.css"
-import "../css/detail.css"
-import "../css/home.css"
