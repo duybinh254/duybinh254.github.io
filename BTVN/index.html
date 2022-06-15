@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee&family=Gilda+Display&family=Lato:wght@100;300;400;700;900&family=Montserrat&family=Open+Sans:wght@300;400;500;700&family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&family=Signika:wght@300;400;500;600;700&family=Yuji+Mai&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+    <div id="root"></div>
+    <script type="text/babel">
+
+const menu = [
+            {
+                name: 'Tất cả' 
+            },
+            {
+                name: 'Âm nhạc'
+            },
+            {
+                name: 'Danh sách kết hợp'
+            },
+            {
+                name: 'Trực tiếp'
+            },
+            {
+                name: 'Trò chơi'
+            },
+            {
+                name: 'Bóng đá'
+            },
+            {
+                name: 'Đọc rap'
+            }
+            ,
+            {
+                name: 'Mới tải lên gần đây'
+            },
+            {
+                name: 'Phim hoạt hình'
+            },
+            {
+                name: 'Đã xem'
+            },
+            {
+                name: 'Đề xuất mới'
+            }
+        ]
+
+        const clips = [
+           {
+            image: "https://i.ytimg.com/vi/JxBnLmCOEJ8/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBDeEOP_tNZKuhdM83eJmUDmWv_vg",
+            time:"4:59",
+            avatar:"https://yt3.ggpht.com/FNxu8jZbaIZFzxxPZtsTs_H9PZzWHxUhvCe28nqNQc-Le4SoT3krUtLZIN4p-_wNp6EevvDjnqc=s88-c-k-c0x00ffffff-no-rj",
+            title:"Đen - Ai muốn nghe không (M/V)",
+            channel: "Đen Vâu Official",
+            views:"4,2 Tr lượt xem",
+            upload:"3 ngày trước",
+            link:"https://www.youtube.com/watch?v=JxBnLmCOEJ8"
+           },
+           {
+            image: "https://i.ytimg.com/vi/ZAYZmIfHEiU/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDv7Vce1IHEPnLPSZPkhSz-aS1PzQ",
+            time:"5:50",
+            avatar:"https://yt3.ggpht.com/Mc_VMzfGM_HiLMs05onClkNPZBRruCMy5iuMRHe3JUQoFvnqAoMrmkLzVpsSW5xAcb9qM4nZVA=s88-c-k-c0x00ffffff-no-rj",
+            title:"Passenger | Home (Official Album Audio)",
+            channel: "Passenger",
+            views:"67 Tr lượt xem",
+            upload:"5 năm trước",
+            link:"https://www.youtube.com/watch?v=ZAYZmIfHEiU"
+           },
+           {
+            image: "https://i.ytimg.com/vi/OAt2GgUGCWk/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBGIzwK3OaFA9NUQK2S10D4yvfnoQ",
+            time:"3:21",
+            avatar:"https://yt3.ggpht.com/ytc/AKedOLRRcNAO462wZklSC44lJ7zihHftgHzkhJ6egDKxhg=s88-c-k-c0x00ffffff-no-rj",
+            title:"Tùng TeA - Gió Bụi ft. Tofu (Official Lyric Video)",
+            channel: "Taynguyensound Official",
+            views:"268 N lượt xem",
+            upload:"12 ngày trước",
+            link:"https://www.youtube.com/watch?v=OAt2GgUGCWk"      
+           },
+           {
+            image: "https://i.ytimg.com/vi/kROrqp0Dx8o/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAxcQG75aQ5IYvA27B1cVwUlKNPWQ",
+            time:"1:05:26",
+            avatar:"https://yt3.ggpht.com/pCsPFEGDFx7IiusCIBDwbfXouGe8DMM1LlfmY4YhFx-FqDr_lsc1jChQ5I1bRu996ZaKbFz4wg=s68-c-k-c0x00ffffff-no-rj",
+            title:"Nhạc Lofi Chill",
+            channel: "LX Lofi",
+            views:"796 N lượt xem",
+            upload:"2 tháng trước",
+            link:"https://www.youtube.com/watch?v=kROrqp0Dx8o"        
+           },
+           {
+            image: "https://i.ytimg.com/vi/QuRc8huiv48/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCxGwhas2BsWT7jmeycsSTyoFhycQ",
+            time:"6:42",
+            avatar:"https://yt3.ggpht.com/Mc_VMzfGM_HiLMs05onClkNPZBRruCMy5iuMRHe3JUQoFvnqAoMrmkLzVpsSW5xAcb9qM4nZVA=s88-c-k-c0x00ffffff-no-rj",
+            title:"Passenger | Birds That Flew and Ships That Sailed - The Album",
+            channel: "Passenger",
+            views:"57 N lượt xem",
+            upload:"2 tuần trước",
+            link:"https://www.youtube.com/watch?v=QuRc8huiv48"
+           },
+           {
+            image: "https://i.ytimg.com/vi/mVX3wPFl3q4/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC0BPn5sE_xK0U2UGLOEY8vzOSWvQ",
+            time:"14:52",
+            avatar:"https://yt3.ggpht.com/ytc/AKedOLQqD6PDrV_eMYy7ug5N78VJKmBUwjCf1rOtJptT9cg=s68-c-k-c0x00ffffff-no-rj",
+            title:"INSIDE CITY 398 | HAALAND SPECIAL",
+            channel: "Man City",
+            views:"935 N lượt xem",
+            upload:"1 ngày trước",
+            link:"https://www.youtube.com/watch?v=mVX3wPFl3q4"
+           },
+           {
+            image: "https://i.ytimg.com/vi/-2cz4om0zvo/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDKUgd3i86gGKntHBrVCJ4v8TBDYw",
+            time:"8:27",
+            avatar:"https://yt3.ggpht.com/ytc/AKedOLSldnze6RNHQxcX8YA0bysl7Q9FWNXPCeO4A3qy=s68-c-k-c0x00ffffff-no-rj",
+            title:"SOUTHAMPTON - TOP 10 BÀN THẮNG ĐẸP NHẤT MÙA GIẢI",
+            channel: "Kplus Sports",
+            views:"5,4 N lượt xem",
+            upload:"19 giờ trước",
+            link:"https://www.youtube.com/watch?v=-2cz4om0zvo"       
+           },
+           {
+            image: "https://i.ytimg.com/vi/8T9MPAT0Rpw/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAn3MwS4Gal4UeeoQAZGALjhoG_GQ",
+            time:"10:30",
+            avatar:"https://yt3.ggpht.com/ytc/AKedOLSpgGwm0vMH-DEBGWPtOXai8FhrGBvj5R_v9M6x=s68-c-k-c0x00ffffff-no-rj",
+            title:"Giant Rainbow Lobster Catch And Cook",
+            channel: "Survival Beast",
+            views:"1,9 Tr lượt xem",
+            upload:"2 tháng trước" ,
+            link:"https://www.youtube.com/watch?v=8T9MPAT0Rpw"       
+           },
+        ]
+    function Header () {
+        return(
+     <div style={styles.header}>
+        <div>
+                <img style={styles.logo} src="https://static.wixstatic.com/media/9d8ed5_dafba1abf21146cc818be61248fe6905~mv2.png/v1/fill/w_800,h_400,al_c/9d8ed5_dafba1abf21146cc818be61248fe6905~mv2.png" alt="logo Youtube"/>    
+            </div>    
+            <div style={styles.search}>
+            <input type="text" placeholder="Tìm kiếm" style={styles.input}/>
+            <img src="https://www.gstatic.com/inputtools/images/tia.png" alt="keyboard" style={styles.keyboard}/>
+            <div style={styles.btnSeacrh}>
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div style={styles.mic}>
+                <i class="fa-solid fa-microphone"></i>
+            </div>
+        </div>
+        <div style={styles.notice}>
+                <div style={styles.video}>
+                    <i class="fa-solid fa-video"></i>
+                </div>
+                <div style={styles.table}>
+                    <i class="fa-solid fa-table-cells"></i>
+                </div>
+                <div style={styles.bell}>
+                    <i class="fa-solid fa-bell"></i>    
+                </div>
+                <div>
+                    <img style={styles.ava} src="https://yt3.ggpht.com/yti/APfAmoF025TGGYCyv-76X0ox4NIWGh_MWEXizW4NLvL1=s88-c-k-c0x00ffffff-no-rj-mo" alt="avatar"/>    
+                </div>
+            </div>
+            
+    </div>
+
+        )
+    }  
+    
+    function Menu (e) {
+        return(
+            
+                <button style={styles.btnRecom}>{e.name}</button>
+               
+        )
+    }
+
+function Content ({props}) {
+        return(
+            <div style={styles.card}>
+                <div style ={styles.cardImg}>
+                    <a href={props.link}><img src={props.image} alt={props.title} style={styles.image}/></a>
+                    <div style={styles.time}>
+                        {props.time}
+                        </div>
+                </div>
+                <div style={styles.cardInfo}>
+                    <div >
+                        <img style={styles.avaChannel} src={props.avatar} alt=""/>
+                    </div>
+                    <div style={styles.sub}>
+                        <h3 style={styles.title}><a style={styles.link} href={props.link}>{props.title}</a></h3>
+                        <p style={styles.para}>{props.channel}</p>
+                        <div style={styles.paraInfo}>
+                        <p style={styles.para}>{props.views}</p>
+                        <p style={styles.para}>{props.upload}</p>    
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        )
+
+    }
+
+    function App () {
+        return (
+            <div id="wrapper" style={styles.body}>
+                <div id ="header">
+                    <Header></Header>
+                    </div>
+                <div id="menu" style={styles.menu}>
+                   { menu.map((menu,index) =>
+                    
+                        <Menu 
+                        key ={index}
+                        name = {menu.name}
+                        />
+                    )
+                   }
+                </div>
+                <div id="content" style={styles.content}>
+                    {clips.map((clip,index) => 
+                        <Content
+                        key = {index}
+                        props = {clip}
+                        />
+                        )}
+                    
+                </div>
+            </div>
+                
+        )
+    }
+    const styles = {
+        
+        body: {
+                margin: '0',
+                padding: '0',
+                boxSizing: 'border-box',
+                fontFamily: '"Roboto","Arial",sans-serif',
+                backgroundColor: '#f9f9f9',
+               
+            },
+        image:{
+            maxWidth: '100%',
+            display: 'block',
+            margin: 'auto'
+        },
+        header: {
+            display:"flex",
+            justifyContent:"space-between",
+            alignItems:"center",
+            backgroundColor:"#fff",
+            borderBottom:"1px solid #0000001a"
+        },
+        logo:{
+            width:"130px",
+            height:"auto"
+        },
+        input:{
+            width:"525px",
+            height:"34px",
+            padding:"2px 6px",
+            borderColor: '#0000001a',
+            borderRadius:"4px 0 0 4px",
+            fontSize:"16px"
+            
+        },
+        search:{
+            position:"relative",
+            display:"flex",
+            alignItems:"center",
+            cursor:"pointer"
+        },
+        keyboard:{
+            position:"absolute",
+            right:"120px",
+            top:"15px",
+            cursor:"pointer"
+        },
+        btnSeacrh: {
+            height:"38px",
+            width:"49px",
+            border:"2px solid ",
+            borderColor: '#0000001a',
+            backgroundColor:"#0000001a",
+            // borderLeft:"none",
+            display:"flex",
+            justifyContent:"center",
+            alignItems:"center",
+            borderRadius:"0 4px 4px 0"
+        },
+        mic:{
+            marginLeft:"10px",
+            height:"40px",
+            width: "40px",
+            display:"flex",
+            justifyContent:"center",
+            alignItems:"center",
+            backgroundColor:"#f9f9f9",
+            borderRadius:"50%"
+        },
+        notice:{
+            display:"flex",
+            justifyContent:"center",
+            alignItems:"center",
+        },
+        video:{
+            fontSize:"18px",
+            marginRight:"30px",
+            cursor:"pointer"
+        },
+        table:{
+            fontSize:"18px",
+            marginRight:"30px",
+            cursor:"pointer"
+        },
+        bell:{
+            fontSize:"18px",
+            marginRight:"30px",
+            cursor:"pointer"
+        },
+        ava:{
+            width:"32px",
+            height:"32px",
+            borderRadius:"50%",
+            marginRight:"30px",
+            cursor:"pointer"
+        },
+        menu: {
+            backgroundColor:"#fff",
+            display:"flex",
+            justifyContent:"center",
+            alignItems:"center"
+        },
+        btnRecom:{
+            height:"32px",
+            margin:"12px 12px 12px 0",
+            padding:"0px 15px",
+            borderRadius:"16px",
+            fontSize:"14px",
+            border:"1px solid rgb(224 224 224)",
+            cursor:"pointer"
+            // border:"none"
+        },
+        content:{
+            display:"flex",
+            flexWrap:"wrap",
+            justifyContent:"center"
+        },
+        card:{
+            width:"23%",
+            margin:"30px 10px"
+        },
+        cardImg:{
+            position:"relative",
+        },
+        time:{
+            position:"absolute",
+            bottom:"5px",
+            right:"5px",
+            padding:"2px 5px",
+            backgroundColor:"#000",
+            color:"#fff",
+            fontSize:"12px"
+        },
+        cardInfo:{
+            display:"flex",
+            marginTop:"12px"
+        },
+        avaChannel:{
+            marginRight:"12px",
+            width:"36px",
+            height:"36px",
+            borderRadius:"50%"
+        },
+        title:{
+            marginTop:"0",
+            marginBottom:"6px",
+            fontSize:"16px",
+            fontWeight:"700"
+        },
+        paraInfo:{
+            display:"flex"
+        },
+        para:{
+            marginTop:"6px",
+            marginBottom:"0",
+            color:"rgb(96, 96, 96)",
+            fontSize:"14px",
+            lineHeight:"14px",
+            fontWeight:"400"
+        },
+        link:{
+            textDecoration:"none",
+            color:"#000"
+        }
+
+    }
+    const container = document.getElementById('root')
+        const root = ReactDOM.createRoot(container)
+        root.render(<App />)
+    </script>
+</body>
+</html>
